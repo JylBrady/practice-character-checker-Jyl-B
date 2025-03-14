@@ -9,3 +9,10 @@ Your application should:
     4. Print out the character 
 */
 
+const readline = require('readline-sync');
+
+let text = readline.question("Hello! Enter the text you would like to search:");
+let index = readline.question("Great.  Now please enter the index number you would like to search:")
+let result = text[index]
+
+console.log ("The character at that index is: " + result)
